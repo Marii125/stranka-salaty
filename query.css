@@ -1,0 +1,164 @@
+@media only screen and (max-width: 1199px) {
+    .product {
+        width: 48%;
+        box-sizing: border-box;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+}
+
+
+
+/*************************************************************************************************************/
+
+@media only screen and (max-width: 991px) {
+
+
+    .product {
+        width: 100%;
+        margin: 0px;
+        border: 0.1px solid #e6eaf0;
+    }
+
+    .offer {
+        width: 230px;
+        margin-left: 240px;
+
+    }
+
+    .order {
+        position: fixed;
+        top: 62px;
+    }
+
+
+
+    .menu li {
+        display: none;
+    }
+
+    #logo {
+        bottom: 21px;
+    }
+
+
+    #menu-select {
+        display: absolut;
+        top: 20px;
+    }
+
+    .pick-menu {
+
+        padding-left: 15px;
+    }
+}
+
+/*
+
+dsafw**************************************************************************************************/
+@media only screen and (max-width: 767px) {
+
+    .offer {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 118px;
+    }
+
+    .product {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 7px;
+    }
+
+    .side-bar {
+        display: none;
+    }
+
+    .header h2 {
+        text-align: center;
+        margin-left: 81px;
+        margin-right: 81px;
+
+    }
+
+    .order {
+
+        text-align: center;
+        position: fixed;
+        background-color: white;
+        width: 100%;
+        right: 0px;
+    }
+
+    p {
+        text-align: center;
+    }
+
+
+    .product-wrapper {
+
+        justify-content: center;
+
+    }
+}
+
+/*ddd************************************************************************************************/
+@media only screen and (max-width: 575px) {
+    .side-bar {
+        display: none;
+
+    }
+
+    .order {
+        text-align: center;
+        position: fixed;
+        background-color: white;
+        width: 100%;
+        right: 0px;
+    }
+
+
+
+    .header h2 {
+        text-align: center;
+        margin-left: 81px;
+        margin-right: 81px;
+        margin-top: 124px;
+    }
+
+
+
+    .offer {
+        width: 483px;
+        margin: 0 auto;
+
+    }
+
+    .product {
+        width: 100%;
+
+    }
+
+
+    p {
+        padding: 0px;
+    }
+
+
+    .product img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+
+
+
+    #menu-select {
+        display: inline-block;
+        right: 7px;
+        position: absolute;
+    }
+
+}

@@ -1,0 +1,164 @@
+        /*header*************/
+
+body {
+    margin:0;
+    font-family: sans-serif, serif;
+}
+#header-nav {
+    width: 100%;
+    height: 65px;
+    background-color: #d474a2;
+    position: fixed;
+    top:0;
+   
+}
+
+
+        /* nav - menu*************/
+.menu {
+    display:flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    
+}
+
+.menu li {
+    margin: 8px;
+    font-size: 18px;
+    margin-top: 8px;
+    color: white;
+    padding-bottom: 3px;
+}
+
+.menu li:hover {
+   color:#ffffffc4;
+}
+
+
+/* later>>>media query**************************/
+#menu-select {
+    display: none;
+}
+
+
+
+/*    logo**********************/
+#logo {
+    position: relative;
+    bottom: 63px;
+    left: 11px;
+/*    aby to bylo responzivni tyhle 3 pravidla*/
+    width: 100%;
+  max-width: 160px;
+  height: auto;
+}
+
+.active {
+    border-bottom: 2px solid white;
+}
+
+
+
+        /*section******************/
+.side-bar {
+   width:212px;
+    
+    height: 100%;
+    font-size: 14px;
+    color: #40434894;
+    position: fixed;
+    
+    top:65px;
+    
+}
+    
+    
+    
+}
+
+.pick-menu li {
+    margin-bottom: 21px;
+   margin-top: 15px;
+    padding-left: 10px;
+   
+    
+}
+
+.pick-menu{
+    list-style-type: none;
+}
+
+
+
+.active-pick {
+    border-left: 2px solid #40434894;
+    color:limegreen;
+    
+     
+}
+
+
+.pick {
+    padding-left: 15px;
+    margin-top:19px;
+     font-weight: bold;
+}
+
+
+.active-pick:active {
+    border-left: 2px solid #40434894;
+    color:limegreen;
+}
+
+
+        /*Nadpis*************************/
+
+.header h2 {
+    border-bottom: 2px solid #d474a2;
+    
+  
+}
+
+
+      /*fotky**********/
+.offer  {
+    width: calc(100% - 263px - 256px - 35px);  /*263 je nalevo .side-bar, 256 je sirokej text .order, 35 je mezera mezi .offer a .order**********/
+    margin-left: 266px;
+    margin-top: 80px;
+}
+
+
+
+.product img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+     border-radius: 4px;
+    
+}
+.product {
+    width: 30%;
+    box-sizing: border-box;
+    text-align: center;
+    border: 0.1px solid #e6eaf0;
+    
+/* **********   poznamka***** je dobre pridat >> box sizing:border box; k tomu kdyby jsem mela kolem objektu ramecek napr(2py solid red) tak aby se 2px pocitalo do tech 30% ...pokud by to bylo box sizing:content box; tak by se 2px z toho ramecku pocitalo 30% + 2px a mohlo by to rozbit*/
+}
+
+.product-wrapper {
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+.order {
+    position: fixed;
+    top: 90px;
+    right: 13px;
+    font-weight: bold;
+    
+    
+}
