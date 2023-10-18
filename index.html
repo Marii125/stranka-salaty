@@ -10,22 +10,23 @@
 
     <link rel="stylesheet" href="all.css">
     <script src="all.js"></script>
+    <script src="mojeJ.js"></script>
 </head>
 
 <body>
 
     <header id="header-nav">
-    
+
         <nav>
             <ul class="menu">
                 <li class="active">nabidka</li>
-                <li>přihlášení</li>
+                <li><a href="prihlaseni.html">přihlášení</a></li>
                 <li>registrace</li>
             </ul>
         </nav>
 
 
-        <img id="logo" src="images/logo_192_new.png" alt="logo">
+        <a href="hlavnistranka.html"><img id="logo" src="images/logo_192_new.png" alt="logo" ></a>
 
         <img id="menu-select" src="images/hamburgerMenu.png" alt="vybirani v menu">
     </header>
@@ -36,17 +37,17 @@
 
             <nav class="side-bar">
                 <ul class="pick-menu">
-                    <li class="active-pick pick">Saláty</li>
-                    <li class="pick">Dochucovadla</li>
-                    <li class="pick">Raw zákusky</li>
-                    <li class="pick">Pro vaši oslavu - objednat 2 dny dopředu</li>
+                    <li class="pick"><a href="#salaty" onclick="addClass(event)" data-target="salaty">Saláty</a></li>
+                    <li class="pick"><a href="#Dochucovadla" onclick="addClass(event)" data-target="Dochucovadla">Dochucovadla</a></li>
+                    <li class="pick"><a href="#Raw zákusky" onclick="addClass(event)"  data-target="Raw zákusky">Raw zákusky</a></li>
+                    <li class="pick"><a href="#Pro vaši oslavu - objednat 2 dny dopředu" onclick="addClass(event)" data-target="Pro vaši oslavu - objednat 2 dny dopředu">Pro vaši oslavu - objednat 2 dny dopředu</a></li>
                 </ul>
             </nav>
         </section>
 
-
+        <!--<div id="salaty" class="empty-space"></div>-->
         <div class="offer">
-            <div class="header">
+            <div id="salaty" class="header">
                 <h2>Saláty</h2>
             </div>
 
@@ -61,9 +62,9 @@
                 </div>
 
                 <div class="product">
-                    <img src="images/dvs).jpg">
-                    <h3>Pleskavica na žaru</h3>
-                    <p>150 Kč</p>
+                    <img src="images/2020-04-02-01-02-23-Bun%20bo.jpg">
+                    <h3>Salát Bun bo Nam Bo</h3>
+                    <p>120 Kč</p>
                     <p>500 g</p>
                     <p>Bez alergenů</p>
                     <p>Složení: rajčata, okurka, paprika červená, ledový salát, sladká cibule, červená cibule, ajvar, čubrica, mleté vepřové a hovězí maso 200 gr</p>
@@ -131,10 +132,110 @@
                     <p>Bez alergenů</p>
                     <p>Složení: rajčata, okurka, paprika červená, ledový salát, sladká cibule, červená cibule, ajvar, čubrica, mleté vepřové a hovězí maso 200 gr</p>
                 </div>
-
-
-
             </div>
+
+
+            <div id="Dochucovadla" class="header">
+                <h2>Dochucovadla</h2>
+            </div>
+
+
+
+            <div class="product-wrapper dochu-wrapper">
+                <div class="product dochu-product">
+                    <img src="images/1dochu.jpg">
+                    <h3>Pleskavica na žaru</h3>
+                    <p>155 Kč</p>
+                    <p>510 g</p>
+                    <p>Bez alergenů</p>
+                    <p>Složení: rajčata, okurka, paprika červená, ledový salát, sladká cibule, červená cibule, ajvar, čubrica, mleté vepřové a hovězí maso 200 gr</p>
+                </div>
+
+                <div class="product dochu-product">
+                    <img src="images/2Dochu.jpg">
+                    <h3>Pleskavica na žaru</h3>
+                    <p>150 Kč</p>
+                    <p>500 g</p>
+                    <p>Bez alergenů</p>
+                    <p>Složení: rajčata, okurka, paprika červená, ledový salát, sladká cibule, červená cibule, ajvar, čubrica, mleté vepřové a hovězí maso 200 gr</p>
+                </div>
+            </div>
+
+
+            <div id="Raw zákusky" class="header">
+                <h2>Raw zákusky</h2>
+            </div>
+
+            <div class="product-wrapper">
+                <div class="product">
+                    <img src="images/Malinov%C3%BD%20chia%20puding.jpg">
+                    <h3>Pleskavica na žaru</h3>
+                    <p>155 Kč</p>
+                    <p>510 g</p>
+                    <p>Bez alergenů</p>
+                    <p>Složení: rajčata, okurka, paprika červená, ledový salát, sladká cibule, červená cibule, ajvar, čubrica, mleté vepřové a hovězí maso 200 gr</p>
+                </div>
+
+                <div class="product">
+                    <img src="images/ovocn%C3%BD%20mal%C3%BD.jpg">
+                    <h3>Pleskavica na žaru</h3>
+                    <p>150 Kč</p>
+                    <p>500 g</p>
+                    <p>Bez alergenů</p>
+                    <p>Složení: rajčata, okurka, paprika červená, ledový salát, sladká cibule, červená cibule, ajvar, čubrica, mleté vepřové a hovězí maso 200 gr</p>
+                </div>
+                <div class="product">
+                    <img src="images/M%C3%AD%C5%A1a%20%C5%99ez.jpg">
+                    <h3>Pleskavica na žaru</h3>
+                    <p>150 Kč</p>
+                    <p>500 g</p>
+                    <p>Bez alergenů</p>
+                    <p>Složení: rajčata, okurka, paprika červená, ledový salát, sladká cibule, červená cibule, ajvar, čubrica, mleté vepřové a hovězí maso 200 gr</p>
+                </div>
+            </div>
+
+            <div id="Pro vaši oslavu - objednat 2 dny dopředu" class="header">
+                <h2>Pro vaši oslavu - objednat 2 dny dopředu</h2>
+            </div>
+
+            <div class="product-wrapper">
+                <div class="product">
+                    <img src="images/Bramborov%C3%A9%20kuli%C4%8Dky%20se%20s%C3%BDrem%20a%20slaninkou.jpg">
+                    <h3>Pleskavica na žaru</h3>
+                    <p>155 Kč</p>
+                    <p>510 g</p>
+                    <p>Bez alergenů</p>
+                    <p>Složení: rajčata, okurka, paprika červená, ledový salát, sladká cibule, červená cibule, ajvar, čubrica, mleté vepřové a hovězí maso 200 gr</p>
+                </div>
+
+                <div class="product">
+                    <img src="images/Ku%C5%99ec%C3%AD%20p%C3%A1rty%20%C5%99%C3%ADze%C4%8Dky.jpg">
+                    <h3>Pleskavica na žaru</h3>
+                    <p>150 Kč</p>
+                    <p>500 g</p>
+                    <p>Bez alergenů</p>
+                    <p>Složení: rajčata, okurka, paprika červená, ledový salát, sladká cibule, červená cibule, ajvar, čubrica, mleté vepřové a hovězí maso 200 gr</p>
+                </div>
+                <div class="product">
+                    <img src="images/P%C3%A1rty%20%C5%99%C3%ADze%C4%8Dky%20ku%C5%99ec%C3%AD.jpg">
+                    <h3>Pleskavica na žaru</h3>
+                    <p>150 Kč</p>
+                    <p>500 g</p>
+                    <p>Bez alergenů</p>
+                    <p>Složení: rajčata, okurka, paprika červená, ledový salát, sladká cibule, červená cibule, ajvar, čubrica, mleté vepřové a hovězí maso 200 gr</p>
+                </div>
+                <div class="product">
+                    <img src="images/Zeleninov%C3%A9%20fingers.jpg">
+                    <h3>Pleskavica na žaru</h3>
+                    <p>150 Kč</p>
+                    <p>500 g</p>
+                    <p>Bez alergenů</p>
+                    <p>Složení: rajčata, okurka, paprika červená, ledový salát, sladká cibule, červená cibule, ajvar, čubrica, mleté vepřové a hovězí maso 200 gr</p>
+                </div>
+            </div>
+
+
+
         </div>
 
 
@@ -142,15 +243,44 @@
             <p>Pro objednání se musíte přihlásit.</p>
 
         </div>
+
+
+
     </main>
 
 
     <footer>
-        <div class="">
-            <h4>Kontakt:</h4>
-            <p>T: +420 721 346 978</p>
-            <p>E: salatyob@seznam.cz</p>
-            <p>Provozovatel </p>
+        <div class="footer-background">
+            <div class="all-info">
+                <div class="info third border">
+                    <h4>Kontakt:</h4>
+                    <p>T: +420 721 346 978</p>
+                    <p>E: salatyob@seznam.cz</p>
+                    <p>Provozovatel </p>
+                </div>
+
+                <div class="info-two third border">
+                    <p>Informace o alergenech </p>
+                    <p>Obchodní podmínky</p>
+                    <p>Zpracování osobních údajů</p>
+                </div>
+
+                <div class="all-want-order-form third border">
+                    <div class="want-order">Chcete od nás každý týden dostávat naši nabídku?</div>
+                    <form>
+                        <input class="one" type="email" placeholder=" Váš e-mail" />
+
+                        <input class="two" type="submit" />
+                    </form>
+                </div>
+            </div>
+
+            <hr />
+            <div class="finish border">
+                <div class="copy third">&copy; salatyobe.cz 2018</div>
+                <div class="third"><img src="images/logo_192_new.png" alt="logo"></div>
+                <p class="icon-fb third">ikona-fb</p>
+            </div>
 
         </div>
 

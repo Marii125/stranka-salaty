@@ -6,6 +6,12 @@
         margin: 0 auto;
     }
 
+
+    /*    footer*/
+    .want-order {
+
+        margin-bottom: 15px;
+    }
 }
 
 
@@ -52,11 +58,56 @@
 
         padding-left: 15px;
     }
+
+
+
+    /*footer*/
+    .want-order {
+
+        margin-bottom: 15px;
+    }
+
+    /*hlavni stranka******************************/
+
+    .btn {
+
+        width: 22%;
+
+    }
+
+    .alignment {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        align-items: center;
+    }
+
+    .border-sec {
+
+        margin-top: 20px;
+        width: 69%;
+
+    }
+
+    .border-sec-two {
+
+        margin-top: 20px;
+        width: 69%;
+    }
+
+    .border {
+
+        text-align: center;
+    }
+
+    #menu-select {
+        display: inline-block;
+        right: 7px;
+        position: absolute;
+    }
 }
 
-/*
-
-dsafw**************************************************************************************************/
+/***************************************************************************************************************************/
 @media only screen and (max-width: 767px) {
 
     .offer {
@@ -83,7 +134,6 @@ dsafw***************************************************************************
     }
 
     .order {
-
         text-align: center;
         position: fixed;
         background-color: white;
@@ -101,7 +151,67 @@ dsafw***************************************************************************
         justify-content: center;
 
     }
+
+
+    /*    footer*/
+    .third {
+        width: 100%;
+        padding: 7px 10px;
+    }
+
+    .two {
+
+        width: 66%;
+
+    }
+
+    .want-order {
+
+        margin-bottom: 14px;
+    }
+
+
+
+    /*    HLAVNI STRANKA*************/
+
+    .btn {
+
+        width: 22%;
+
+    }
+
+    .alignment {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        align-items: center;
+    }
+
+    .border-sec {
+
+        margin-top: 20px;
+        width: 69%;
+
+    }
+
+    .border-sec-two {
+
+        margin-top: 20px;
+        width: 69%;
+    }
+
+    .border {
+
+        text-align: center;
+    }
+
+    #menu-select {
+        display: inline-block;
+        right: 7px;
+        position: absolute;
+    }
 }
+
 
 /*ddd************************************************************************************************/
 @media only screen and (max-width: 575px) {
@@ -161,4 +271,81 @@ dsafw***************************************************************************
         position: absolute;
     }
 
+
+
+
+    /*FOOTER*/
+    .all-info {
+        display: block;
+    }
+
+    .info {
+        text-align: center;
+        padding-top: 1px;
+    }
+
+    .third {
+        width: 100%;
+        margin-top: 23px;
+        margin-bottom: 0;
+
+    }
+
+    .one {
+
+        width: 104%;
+    }
+
+    .want-order {
+
+        margin-bottom: 9px;
+    }
+
+    .finish {
+        display: block;
+        text-align: center;
+    }
+
+    .border {
+        border-bottom: 2px solid white;
+    }
+
+    hr {
+        display: none;
+    }
+
+
+    /*    HLAVNI STRANKA***************/
+
+    .btn {
+
+
+        width: 24%;
+
+
+    }
+
+    .alignment {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .border-sec {
+
+        margin-top: 20px;
+        width: 88%;
+
+    }
+
+    .border-sec-two {
+
+        margin-top: 20px;
+        width: 88%;
+    }
+
+    .border {
+
+        text-align: center;
+    }
 }
